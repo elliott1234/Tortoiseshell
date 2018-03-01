@@ -38,7 +38,7 @@ div {
   margin-left: 10rem;
   height: auto;
   }
-nav.img {
+nav img {
   height: 1.5rem;
   margin-right: 1rem;
   border: none;
@@ -49,9 +49,13 @@ align-items:center;
 margin-left: 2rem;
 align-items: center;
 }
+.menu {
+  width:auto;
+}
 li {
   display: inline;
-  padding: 1rem 2rem;
+  padding-top:1rem;
+  padding-right:2rem;
 }
 .block {
   display: flex;
@@ -119,12 +123,65 @@ h3 {
   padding-left: 1.25rem;
   margin-bottom: 1rem;
 }
+footer {
+  background-color: azure;
+  align-items: center;
+  max-width: 960px;
+  margin-left: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+}
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+footer h4 {
+  font-size: 1rem;
+}
+
+@media only screen and ( max-width: 1024px ) {
+  body {
+    width: 100%;
+  }
+  header {
+    margin-top: 0px;
+    border: none;
+  }
+  .headline {
+    padding: 0.75rem 4rem 0.75rem 4rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+}
+  .image1 {
+    margin-top: 0px;
+    width: 100%;
+    border: none;
+  }
+  .universal {
+    margin-left: 0rem;
+  }
+  .large-menu {
+    display: inline;
+  }
+}
+@media only screen and ( max-width: 470px) {
+  .large-menu {
+    display: inline;
+    display: none;
+  }
+
+}
 
 
-
-
-@media only screen and (min-width: 700px ) {
+@media only screen and (min-width: 470px ) {
   .shrunken-menu {
     display: none;
   }
+
 }
